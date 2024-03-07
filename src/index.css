@@ -1,0 +1,18 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* body, #root must have height as 100vh then only in react we can see backaground color based on height % values,
+ otherwise background-color doesn't apply at all
+ 
+ *It is for react projects only as we work on app,tsx directly not on index.html**/
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
